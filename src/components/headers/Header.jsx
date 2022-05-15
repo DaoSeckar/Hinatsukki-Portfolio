@@ -1,5 +1,5 @@
-import React from 'react'
 import './header.css'
+import React from 'react'
 import Icon from '../../assets/hinaicon.png'
 import HeaderSocials from './HeaderSocials'
 
@@ -8,8 +8,8 @@ const Header = () => {
       <section id='header'>
         <header>
             <div className="container header__container">
-                <h2>Welcome to</h2>
-                <h1>Hinatsukki's portfolio</h1>
+                <h2 id = "h2">Welcome to</h2>
+                <h1 id = "h1">Hinatsukki's portfolio</h1>
                 <div className='centered'>
                 <img src={Icon} />
                 </div>
