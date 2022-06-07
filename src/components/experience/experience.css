@@ -1,0 +1,63 @@
+.main {
+    padding-top: 30px;
+}
+
+.carousel .slide {
+    height: 50vh;
+}
+
+
+.carousel .slide video {
+    height: 600px;
+}
+
+.carousel .slide .legend {
+    transition: all .5s ease-in-out;
+    position: absolute;
+    bottom: 40px;
+    /* Adjust this percentage to adjust lengend position in center */
+    left: 50% !important;
+    margin-left: none !important;
+    width: auto !important;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.25;
+    transition: opacity .35s ease-in-out;
+    margin: 0 auto !important;
+    
+}
+    
+    
+.carousel.carousel-slider .control-arrow {
+    padding: 100px !important;
+}
+    
+    
+.carousel.carousel-slider .control-arrow:hover {
+    background: none !important;
+}
+
+/* Tablet size */
+@media screen and (max-width: 1024px) {
+    .carousel .slide {
+        height: 30vh;
+    }
+    .carousel .slide video {
+        height: 400px;
+    }
+}
+
+/* Phone size */
+@media screen and (max-width: 600px) {
+    .carousel .slide {
+        height: 30vh;
+    }
+
+    .carousel .slide video {
+        height: 200px;
+    }
+}
