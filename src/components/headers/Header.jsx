@@ -11,7 +11,7 @@ const Header = () => {
                 <h2>Welcome to</h2>
                 <h1>Hinatsukki's portfolio</h1>
                 <div className='centered'>
-                <img src={Icon} />
+                <img src={Icon} alt=""/>
                 </div>
                 <HeaderSocials />
                 <a href ="#contact" className='scroll__down'>Scroll Down</a>
