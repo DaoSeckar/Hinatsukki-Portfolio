@@ -33,21 +33,21 @@ const Contact = () => {
             <AiTwotoneMail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>Hinatsukkii@gmail.com</h5>
-            <a href="mailto:Hinatsukkii@gmail.com " target="blank">Send me an email</a>
+            <a href="mailto:Hinatsukkii@gmail.com ">Send me an email</a>
           </article>
           {/**Instagram */}
           <article className="contact__option">
             <AiFillInstagram className='contact__option-icon'/>
             <h4>Instagram</h4>
             <h5>hinatsukki</h5>
-            <a href="https://www.instagram.com/hinatsukki/" target="blank">Send me a DM</a>
+            <a href="https://www.instagram.com/hinatsukki/">Send me a DM</a>
           </article>
           {/**Twitter */}
           <article className="contact__option">
             <AiFillTwitterCircle className='contact__option-icon'/>
             <h4>Twitter</h4>
             <h5>@hinatsukkii</h5>
-            <a href="https://twitter.com/messages/compose?recipient_id=4686100315" target="blank">Send me a DM</a>
+            <a href="https://twitter.com/messages/compose?recipient_id=4686100315">Send me a DM</a>
           </article>
           {/**END OF CONTACT OPTIONS */}
         </div>
