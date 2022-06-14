@@ -1,6 +1,6 @@
 header {
-    height:69vh;
-    overflow:hidden;
+    height: 69vh;
+    overflow: hidden;
 }
 
 .header__container {
@@ -48,14 +48,14 @@ header {
 /* Tablet size */
 @media screen and (max-width: 1024px) {
     header {
-        height: 100vh;
+        height: 50vh;
     }
 }
 
 /* Phone size */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 69vh;
     }
 
     .header__socials,.scroll__down {

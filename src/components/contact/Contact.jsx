@@ -1,10 +1,63 @@
 import React from 'react'
 import './contact.css'
+import {AiTwotoneMail, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_bzha0cz', 'template_yhmljto', form.current, 'XgsFTpU8a1Bz84jMw')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    
+    e.target.reset()
+  };  
+
+
+
   return (
     <section id ='contact'>
-      Contact
+      <h5>Get In Touch With Me</h5>
+      <h2>Contact Me</h2>
+      <div className="container contact__container">
+        <div className="contact__options">
+          {/*Emails*/}
+          <article className="contact__option">
+            <AiTwotoneMail className='contact__option-icon'/>
+            <h4>Email</h4>
+            <h5>Hinatsukkii@gmail.com</h5>
+            <a href="mailto:Hinatsukkii@gmail.com " target="blank">Send me an email</a>
+          </article>
+          {/**Instagram */}
+          <article className="contact__option">
+            <AiFillInstagram className='contact__option-icon'/>
+            <h4>Instagram</h4>
+            <h5>hinatsukki</h5>
+            <a href="https://www.instagram.com/hinatsukki/" target="blank">Send me a DM</a>
+          </article>
+          {/**Twitter */}
+          <article className="contact__option">
+            <AiFillTwitterCircle className='contact__option-icon'/>
+            <h4>Twitter</h4>
+            <h5>@hinatsukkii</h5>
+            <a href="https://twitter.com/messages/compose?recipient_id=4686100315" target="blank">Send me a DM</a>
+          </article>
+          {/**END OF CONTACT OPTIONS */}
+        </div>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name='name' placeholder='Your Full Name' required></input>
+          <input type="email" name='email' placeholder='Your Email' required></input>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type='submit' className='btn btn-primary'>Send Me A Message</button>
+        </form>
+      </div>
     </section>
   )
 }
