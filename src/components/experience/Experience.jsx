@@ -29,11 +29,11 @@ const Experience = () => {
   return (
     <section id="experience">
       <h1>My work</h1>
-      <Carousel className="main">
+      <Carousel className="main" useKeyboardArrows>
         {videoProperites
           ? videoProperites.map((item) => (
               <div className="video">
-                <video src={item.src} controls>
+                <video src={item.src} controls autoPlay>
                   Your browser does not support the video tag.
                 </video>
                 <p className="legend">{item.title}</p>

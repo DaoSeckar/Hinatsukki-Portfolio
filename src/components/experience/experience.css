@@ -49,6 +49,9 @@
     .carousel .slide video {
         height: 400px;
     }
+    .carousel.carousel-slider .control-arrow {
+        padding: 100px !important;
+    }
 }
 
 /* Phone size */
@@ -60,5 +63,9 @@
 
     .carousel .slide video {
         height: 200px;
+    }
+
+    .carousel.carousel-slider .control-arrow {
+        padding: 100px !important;
     }
 }
