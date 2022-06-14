@@ -50,7 +50,7 @@
         height: 400px;
     }
     .carousel.carousel-slider .control-arrow {
-        padding: 100px !important;
+        padding: 50px !important;
     }
 }
 
@@ -66,6 +66,6 @@
     }
 
     .carousel.carousel-slider .control-arrow {
-        padding: 100px !important;
+        padding: 10px !important;
     }
 }
