@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css";
-import {AiFillTwitterCircle,AiFillInstagram,AiFillFacebook} from 'react-icons/ai'
+import {AiFillTwitterCircle,AiFillInstagram,AiFillFacebook, AiFillShopping} from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -17,6 +17,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/Bakatsukki"><AiFillFacebook size='24px'/></a>
           <a href="https://www.instagram.com/hinatsukki/"><AiFillInstagram size='24px'/></a>
           <a href="https://twitter.com/hinatsukkii"><AiFillTwitterCircle size='24px'/></a>
+          <a href="https://hinatsukki.bigcartel.com/"><AiFillShopping size='24px'/></a>
         </div>
 
         <div className="footer__copyright">
