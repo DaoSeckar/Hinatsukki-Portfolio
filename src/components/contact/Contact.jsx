@@ -51,11 +51,12 @@ const Contact = () => {
           </article>
           {/**END OF CONTACT OPTIONS */}
         </div>
-        <form ref={form} data-netlify-recaptcha="true" onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required></input>
           <input type="email" name='email' placeholder='Your Email' required></input>
           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <div data-netlify-recaptcha="true"></div>
+          <div class="g-recaptcha" data-sitekey="6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"></div>
+          <br/>
           <button type='submit' className='btn btn-primary'>Send Me A Message</button>
         </form>
       </div>
