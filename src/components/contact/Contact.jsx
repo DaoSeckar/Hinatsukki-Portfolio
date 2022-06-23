@@ -8,8 +8,8 @@ import {
 import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
+import 'dotenv/config'
 
-require('dotenv').config()
 const Contact = () => {
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const form = useRef();
