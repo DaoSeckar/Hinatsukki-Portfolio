@@ -8,7 +8,6 @@ import {
 import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
-import 'dotenv/config'
 
 const Contact = () => {
   const [captchaVerified, setCaptchaVerified] = useState(false);
@@ -93,7 +92,7 @@ const Contact = () => {
           <ReCAPTCHA
             sitekey={
               process.env.REACT_APP_SITE_KEY 
-              //|| "6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"
+              || "6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"
             }
             onChange={() => setCaptchaVerified(true)}
           />
