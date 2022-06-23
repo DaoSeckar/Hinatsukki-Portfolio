@@ -9,6 +9,7 @@ import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
 
+/**captcha and email handling */
 const Contact = () => {
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const form = useRef();
