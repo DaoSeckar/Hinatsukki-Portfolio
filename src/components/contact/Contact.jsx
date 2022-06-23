@@ -12,6 +12,7 @@ import { useState } from "react";
 const Contact = () => {
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const form = useRef();
+  const {REACT_APP_SITE_KEY} = process.env;
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -91,8 +92,7 @@ const Contact = () => {
           ></textarea>
           <ReCAPTCHA
             sitekey={
-              process.env.REACT_APP_SITE_KEY 
-              || "6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"
+              `${REACT_APP_SITE_KEY}`
             }
             onChange={() => setCaptchaVerified(true)}
           />
