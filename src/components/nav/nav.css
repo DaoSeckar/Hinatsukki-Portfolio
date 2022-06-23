@@ -10,7 +10,7 @@ nav {
     border-radius: 3rem;
     backdrop-filter: blur(15px);
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     left: calc(50% - 9.3rem);
   }
   
