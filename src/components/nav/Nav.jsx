@@ -12,6 +12,7 @@ const Nav = () => {
         <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><AiFillHeart size='24px'/></a>
         <a href="#service"  onClick={() => setActiveNav('#service')} className={activeNav === '#service' ? 'active' : ''}><AiFillAccountBook size='24px'/></a>
         <a href="#contact"  onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiFillContacts size='24px'/></a>
+        <div className="indicator"></div>
     </nav>
   )
 }

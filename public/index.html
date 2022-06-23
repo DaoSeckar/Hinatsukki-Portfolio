@@ -3,17 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FCF2F3" />
-    <meta
-      name="description"
-      content="Hinatsukkin portfolio"
-    />
+    <meta name="description" content="Hinatsukkin portfolio" />
 
     <title>Hinatsukkin</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <script>
+      const list = document.querySelectorAll(".list");
+
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
   </body>
 </html>

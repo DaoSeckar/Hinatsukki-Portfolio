@@ -1,5 +1,5 @@
 nav {
-    background: #FFE2EA;
+    background: #ffe2ea;
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -12,22 +12,41 @@ nav {
     position: fixed;
     bottom: 30px;
     left: calc(50% - 9.3rem);
-}
-
+  }
+  
 nav a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-primary);
-    font-size: 1.1rem;
+background: transparent;
+padding: 0.9rem;
+border-radius: 50%;
+display: flex;
+color: var(--color-primary);
+font-size: 1.1rem;
+z-index: 2;
 }
 
-
-nav a:hover {
-    background: var(--color-bg);
+/**Indicator for css*/
+.indicator {
+position: absolute;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: var(--color-bg);
+transition: 0.5s;
 }
 
-nav a.active {
-    background: var(--color-bg);
+nav a:nth-child(1).active ~ .indicator {
+transform: translateX(calc(66px * 0));
 }
+
+nav a:nth-child(2).active ~ .indicator {
+transform: translateX(calc(66px * 1));
+}
+
+nav a:nth-child(3).active ~ .indicator {
+transform: translateX(calc(66px * 2));
+}
+
+nav a:nth-child(4).active ~ .indicator {
+transform: translateX(calc(66px * 3));
+}
+  
