@@ -91,8 +91,7 @@ const Contact = () => {
           ></textarea>
           <ReCAPTCHA
             sitekey={
-              process.env.REACT_APP_SITE_KEY ||
-              "6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"
+              process.env.REACT_APP_SITE_KEY
             }
             onChange={() => setCaptchaVerified(true)}
           />
