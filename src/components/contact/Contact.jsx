@@ -9,7 +9,6 @@ import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
 
-/**captcha and email handling */
 const Contact = () => {
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const form = useRef();
@@ -92,7 +91,8 @@ const Contact = () => {
           ></textarea>
           <ReCAPTCHA
             sitekey={
-              process.env.REACT_APP_SITE_KEY
+              process.env.REACT_APP_SITE_KEY ||
+              "6LdianQgAAAAALZxQ6_sMzvkQ4YIkx3yA8DymQRj"
             }
             onChange={() => setCaptchaVerified(true)}
           />
